@@ -1,0 +1,142 @@
+* {
+    background-color:white;
+}
+#main-panel {
+    width:80%;
+    height:80%;
+    padding:0px 50px 50px 50px;
+    margin:auto;
+}
+
+.selector-list {
+    margin:0px;
+    padding:20px;
+    padding-top:0px;
+    background-color:white;
+    border-radius:20px 20px 0px 0px;
+    border:4px solid white;
+    border-bottom: none;
+}
+#main-panel .selector {
+    display:inline-block;
+    width:100px;
+    margin:10px;
+    height:100px;
+    background-color:slategray;
+    border-radius:50px;
+    text-align : center;
+    font-size:30px;
+    color:Gainsboro;
+    border:solid black 2px;
+}
+
+.panel {
+    margin:0px;
+    padding:50px;
+    padding-left:70px;
+    background-color:white;
+    border-radius:0px 0px 20px 20px;
+    display:none;
+    color:black ;
+    font-size:50px;
+    min-height:600px;
+}
+
+.active {
+    border-top: solid 2px black;
+    display:block;
+    border:4px solid white;
+    border-top:2px solid black;
+}
+
+.panel .side {
+    position:fixed;
+    right:50px;
+    width:600px;
+    border-radius:50px;
+    border:5px solid white;
+    margin:50px;
+}
+.panel .content{
+    margin:0px;
+    padding:0px;
+    float:left;
+    font-size:40px;
+}
+
+.panel * {
+    background-color:inherit;
+}
+
+#main-panel .selector.current {
+    color:slategray;
+    background-color:gainsboro;
+}
+
+.panel.image img {
+    position:absolute;
+    top:1%;
+    left:1%;
+    width:98%;
+    margin:auto;
+    border-radius:10px;
+}
+
+.panel.splash {
+    font-size:100px;
+    text-align:center;
+    padding-top: 80px;
+}
+
+#copyright {
+    position:absolute;
+    color:slategray;
+    right:30px;
+    bottom:10px;
+    font-size:20px;
+    background-color:transparent;
+
+}
+
+.panel.active.image {
+    background-color:inherit;
+    border:none;
+}
+
+.arrow {
+    display : none;
+    position: absolute;
+    top:45%;
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:80px;
+    font-weight: bold;
+    text-align:center;
+    font-family:cursive;
+    line-height:90px;
+    color:slategray;
+    background-color:rgba(255,255,255,0.5);
+}
+
+.arrow.active-arrow {
+    display:block;
+}
+
+.arrow.left {
+    left:10px;
+}
+
+.arrow.right {
+    right:10px;
+}
+
+#watermark {
+    border-radius:0px;
+    position:absolute;
+    margin:10px;
+    bottom:0px;
+    left:0px;
+    width:500px;
+}
